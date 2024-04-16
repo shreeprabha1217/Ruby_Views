@@ -1,0 +1,8 @@
+<!-- _item.html.erb -->
+<tr>
+  <td><%= item.title %></td>
+  <td><%= item.content %></td>
+  <% if item.respond_to?(:published_at) %>
+    <td><%= item.published_at %></td>
+  <% end %>
+</tr>
